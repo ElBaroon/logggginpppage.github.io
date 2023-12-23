@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>صفحة تسجيل الدخول</title>
+    
+</head>
+<body>
+
+    <form dir="rtl" action="/signup" method="post">
+        <h2>create account</h2>
+        <label for="username">User name</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirmPassword">Confirm password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone number</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="role">Account type</label>
+        <select id="role" name="role" required>
+            <option value="admin">Admin</option>
+            <option value="member">Normal user</option>
+        </select>
+
+        <button type="submit">Create account</button>
+    </form>
+
+</body>
+</html>
